@@ -7,9 +7,10 @@ import java.io.IOException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.List;
 
 @Slf4j
-public abstract class GeneratorApi implements GenerateIntegers, GenerateUUID {
+public abstract class GeneratorApi {
 
     protected HttpClient httpClient = HttpClient.newBuilder().build();
 
@@ -23,5 +24,9 @@ public abstract class GeneratorApi implements GenerateIntegers, GenerateUUID {
             throw new RandomGeneratorException("GenerateIntegers error", exception);
         }
     }
+
+    public abstract List<Integer> generateIntegers(int min, int max, int howManyNumbers);
+
+    public  abstract List<String> generateUUIDs(int howManyUUIDs);
 
 }

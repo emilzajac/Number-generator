@@ -25,7 +25,7 @@ public class GeneratorController {
     }
 
     @GetMapping("/uuids")
-    public ResponseEntity<List<String>> getAll(@RequestParam int howManyNumbers) {
+    public ResponseEntity<List<String>> generateUUIDs(@RequestParam int howManyNumbers) {
         return ResponseEntity.ok(generatorService.generateUUIDs(howManyNumbers));
     }
 

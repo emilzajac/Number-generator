@@ -66,16 +66,16 @@ public class RandomOrgApi extends GeneratorApi {
     }
 
     private List<Integer> extractIntValuesFromJSONArray(String json) {
-        JsonArray jsonArray = getAsJsonArray(json);
         List<Integer> numbers = new ArrayList<>();
-        jsonArray.iterator().forEachRemaining(jsonElement -> numbers.add(jsonElement.getAsInt()));
+        getAsJsonArray(json).iterator()
+                .forEachRemaining(jsonElement -> numbers.add(jsonElement.getAsInt()));
         return numbers;
     }
 
     private List<String> extractStringValuesFromJSONArray(String json) {
-        JsonArray jsonArray = getAsJsonArray(json);
         List<String> numbers = new ArrayList<>();
-        jsonArray.iterator().forEachRemaining(jsonElement -> numbers.add(jsonElement.getAsString()));
+        getAsJsonArray(json).iterator()
+                .forEachRemaining(jsonElement -> numbers.add(jsonElement.getAsString()));
         return numbers;
     }
 
