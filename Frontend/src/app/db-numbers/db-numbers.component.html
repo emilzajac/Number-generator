@@ -1,0 +1,22 @@
+
+<div class="container p-5 col-12">
+  <h3>Random numbers fetches from h2 database</h3>
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Number</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let number of dbNumbers; index as i">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>{{ number }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
