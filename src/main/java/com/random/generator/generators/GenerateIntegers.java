@@ -1,8 +1,8 @@
-package com.random.generator.service.generator;
+package com.random.generator.generators;
 
 import java.util.List;
 
-public interface GenerateIntegers {
+interface GenerateIntegers {
 
     List<Integer> generateIntegers(int min, int max, int howManyNumbers);
 

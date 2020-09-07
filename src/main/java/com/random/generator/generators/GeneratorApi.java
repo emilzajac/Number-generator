@@ -1,4 +1,4 @@
-package com.random.generator.service.generator;
+package com.random.generator.generators;
 
 import com.random.generator.exceptions.RandomGeneratorException;
 import lombok.extern.slf4j.Slf4j;

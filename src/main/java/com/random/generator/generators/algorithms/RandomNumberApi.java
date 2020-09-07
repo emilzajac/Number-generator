@@ -1,6 +1,6 @@
-package com.random.generator.service.generator.algorithm;
+package com.random.generator.generators.algorithms;
 
-import com.random.generator.service.generator.GeneratorApi;
+import com.random.generator.generators.GeneratorApi;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

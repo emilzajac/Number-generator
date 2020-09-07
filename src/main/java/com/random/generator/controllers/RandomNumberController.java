@@ -1,4 +1,4 @@
-package com.random.generator.controller;
+package com.random.generator.controllers;
 
 import com.random.generator.service.RandomNumberService;
 import lombok.AllArgsConstructor;

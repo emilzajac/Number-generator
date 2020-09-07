@@ -1,9 +1,9 @@
-package com.random.generator.service.generator.algorithm;
+package com.random.generator.generators.algorithms;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonParser;
-import com.random.generator.service.generator.GeneratorApi;
+import com.random.generator.generators.GeneratorApi;
 import lombok.Builder;
 import lombok.experimental.SuperBuilder;
 import lombok.extern.slf4j.Slf4j;

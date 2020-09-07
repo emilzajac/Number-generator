@@ -1,7 +1,7 @@
-package com.random.generator.service.generator;
+package com.random.generator.generators;
 
-import com.random.generator.service.generator.algorithm.RandomOrgApi;
-import com.random.generator.service.generator.algorithm.RandomNumberApi;
+import com.random.generator.generators.algorithms.RandomNumberApi;
+import com.random.generator.generators.algorithms.RandomOrgApi;
 
 public class GeneratorFactory {
 
