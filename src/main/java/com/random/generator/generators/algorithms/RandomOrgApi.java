@@ -21,10 +21,10 @@ import java.util.Random;
 public class RandomOrgApi extends GeneratorApi {
 
     @Value("${external.api.url.random-org}")
-    private final static String apiRandomOrgUrl = "https://api.random.org/json-rpc/2/invoke";
+    private String apiRandomOrgUrl;
 
     @Value("${external.api.key.random-org}")
-    private final static String apiRandomOrgKey = "80e8278b-ace3-49c5-9122-b179b0aa2b46";
+    private String apiRandomOrgKey;
 
     @Override
     public List<Integer> generateIntegers(int min, int max, int howManyNumbers) {

@@ -16,7 +16,7 @@ import java.util.stream.Stream;
 public class RandomNumberApi extends GeneratorApi {
 
     @Value("${external.api.url.random-number-api-com}")
-    private final static String apiRandomOrgUrl = "http://www.randomnumberapi.com/api/v1.0/";
+    private String apiRandomOrgUrl;
 
     @Override
     public List<Integer> generateIntegers(int min, int max, int howManyNumbers) {
